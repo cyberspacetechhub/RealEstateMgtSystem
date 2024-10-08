@@ -5,7 +5,14 @@ import Apartment from '../../assets/images/demo-real-estate-icon-apartment.svg'
 import Estate from '../../assets/images/demo-real-estate-icon-home.svg'
 import Office from '../../assets/images/demo-real-estate-icon-office.svg'
 import Shop from '../../assets/images/demo-real-estate-icon-shop.svg'
-
+import Villa from '../../assets/images/photos/estate.jpg'
+import InfoSec from '../../assets/images/photos/new-est.png'
+import House from '../../assets/images/photos/house.jpg'
+import Image from '../../assets/images/photos/image.jpg'
+import Est_Vid from '../../assets/images/photos/estate-vid.jpeg'
+import Top from '../../assets/images/photos/top3.jpg'
+import Home from '../../assets/images/photos/home-in-vancouver.jpeg'
+import Rev1 from '../../assets/images/photos/download.jpeg'
 const Page = () => {
   return (
     <div className=' mt-10'>
@@ -14,7 +21,7 @@ const Page = () => {
             >
                 <div className="swiper-wrapper">
                     {/* <!-- start slider item */}
-                    <div className="swiper-slide cover-background" style={{ backgroundImage: "url('https://via.placeholder.com/1920x939')" }}
+                    <div className="swiper-slide cover-background" style={{ backgroundImage: `url(${Villa})` }}
                     > 
                         <div className="container h-100">
                             <div className="row align-items-center h-100">
@@ -53,7 +60,7 @@ const Page = () => {
                     </div>
                     {/* <!-- end slider item */}
                     {/* <!-- start slider item */}
-                    <div className="swiper-slide cover-background" style={{backgroundImage:"url('https://via.placeholder.com/1920x1080')"}}
+                    {/* <div className="swiper-slide cover-background" style={{backgroundImage:"url('https://via.placeholder.com/1920x1080')"}}
                     > 
                         <div className="container h-100">
                             <div className="row align-items-center h-100">
@@ -89,10 +96,10 @@ const Page = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* <!-- end slider item */}
                     {/* <!-- start slider item */}
-                    <div className="swiper-slide cover-background" style={{backgroundImage:"url('https://via.placeholder.com/1920x939')"}}> 
+                    {/* <div className="swiper-slide cover-background" style={{backgroundImage:"url('https://via.placeholder.com/1920x939')"}}> 
                         <div className="container h-100">
                             <div className="row align-items-center h-100">
                                 <div className="col-md-8 position-relative text-white">
@@ -127,7 +134,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* <!-- end slider item */}
                 </div>
                 {/* <!-- start slider pagination  */}
@@ -153,7 +160,7 @@ const Page = () => {
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-6 md-mb-50px position-relative">
                         <figure className="position-relative mb-0 overflow-hidden border-radius-6px"> 
-                            <img src="https://via.placeholder.com/610x610" alt="" className="w-100" /> 
+                            <img src={InfoSec} alt="" className="w-100" /> 
                             <figcaption className="position-absolute border-radius-left-8px bg-base-color right-0px bottom-0px p-45px last-paragraph-no-margin">
                                 <i className="feather icon-feather-home icon-medium text-white mb-15px d-block"></i>
                                 <h4 className="alt-font fw-700 text-white mb-0 d-block">258,952+</h4>
@@ -192,8 +199,8 @@ const Page = () => {
                             {/* end features box item */}
                         </div>
                         <div className="d-inline-block">
-                            <a href="demo-real-estate-about.html" className="btn btn-dark-gray btn-medium btn-round-edge me-25px">About company</a> 
-                            <a href="demo-real-estate-sell.html" className="btn btn-large btn-link btn-hover-animation-switch text-dark-gray p-0">
+                            <a href="/about" className="btn btn-dark-gray btn-medium btn-round-edge me-25px">About company</a> 
+                            <a href="/sell" className="btn btn-large btn-link btn-hover-animation-switch text-dark-gray p-0">
                                 <span>
                                     <span className="btn-text">Find property</span>
                                     <span className="btn-icon"><i className="feather icon-feather-arrow-right"></i></span>
@@ -219,12 +226,12 @@ const Page = () => {
                         <div className="feature-box pt-45px pb-25px">
                             <div className="feature-box-icon mb-10px">
                                 <div className="text-uppercase alt-font fw-700 text-base-color fs-12 lh-22 bg-base-color-transparent border-radius-4px position-absolute left-18px top-18px ps-10px pe-10px">20K</div>
-                                <a href="demo-real-estate-sell.html" className="d-block">
+                                <a href="/sell" className="d-block">
                                     <img src={Apartment} alt="" />
                                 </a>
                             </div>
                             <div className="feature-box-content">
-                                <a href="demo-real-estate-sell.html" className="alt-font text-dark-gray text-dark-gray-hover fw-700 fs-15 lh-20 text-uppercase">Apartment</a>
+                                <a href="/sell" className="alt-font text-dark-gray text-dark-gray-hover fw-700 fs-15 lh-20 text-uppercase">Apartment</a>
                             </div>
                         </div>  
                     </div>
@@ -234,12 +241,12 @@ const Page = () => {
                         <div className="feature-box pt-45px pb-25px">
                             <div className="feature-box-icon mb-10px">
                                 <div className="text-uppercase alt-font fw-700 text-base-color fs-12 lh-22 bg-base-color-transparent border-radius-4px position-absolute left-18px top-18px ps-10px pe-10px">18K</div>
-                                <a href="demo-real-estate-sell.html" className="d-block">
+                                <a href="/sell" className="d-block">
                                     <img src={Condomium} alt="" />
                                 </a>
                             </div>
                             <div className="feature-box-content">
-                                <a href="demo-real-estate-sell.html" className="alt-font text-dark-gray text-dark-gray-hover fw-700 fs-15 lh-20 text-uppercase">Condominium</a>
+                                <a href="/sell" className="alt-font text-dark-gray text-dark-gray-hover fw-700 fs-15 lh-20 text-uppercase">Land</a>
                             </div>
                         </div>  
                     </div>
@@ -249,12 +256,12 @@ const Page = () => {
                         <div className="feature-box pt-45px pb-25px">
                             <div className="feature-box-icon mb-10px">
                                 <div className="text-uppercase alt-font fw-700 text-base-color fs-12 lh-22 bg-base-color-transparent border-radius-4px position-absolute left-18px top-18px ps-10px pe-10px">22K</div>
-                                <a href="demo-real-estate-sell.html" className="d-block">
+                                <a href="/sell" className="d-block">
                                     <img src={Estate} alt="" />
                                 </a>
                             </div>
                             <div className="feature-box-content">
-                                <a href="demo-real-estate-sell.html" className="alt-font text-dark-gray text-dark-gray-hover fw-700 fs-15 lh-20 text-uppercase">Home</a>
+                                <a href="/sell" className="alt-font text-dark-gray text-dark-gray-hover fw-700 fs-15 lh-20 text-uppercase">Home</a>
                             </div>
                         </div>  
                     </div>
@@ -264,12 +271,12 @@ const Page = () => {
                         <div className="feature-box pt-45px pb-25px">
                             <div className="feature-box-icon mb-10px">
                                 <div className="text-uppercase alt-font fw-700 text-base-color fs-12 lh-22 bg-base-color-transparent border-radius-4px position-absolute left-18px top-18px ps-10px pe-10px">09K</div>
-                                <a href="demo-real-estate-sell.html" className="d-block">
+                                <a href="/sell" className="d-block">
                                     <img src={Office} alt="" />
                                 </a>
                             </div>
                             <div className="feature-box-content">
-                                <a href="demo-real-estate-sell.html" className="alt-font text-dark-gray text-dark-gray-hover fw-700 fs-15 lh-20 text-uppercase">Office</a>
+                                <a href="/sell" className="alt-font text-dark-gray text-dark-gray-hover fw-700 fs-15 lh-20 text-uppercase">Office</a>
                             </div>
                         </div>  
                     </div>
@@ -279,12 +286,12 @@ const Page = () => {
                         <div className="feature-box pt-45px pb-25px">
                             <div className="feature-box-icon mb-10px">
                                 <div className="text-uppercase alt-font fw-700 text-base-color fs-12 lh-22 bg-base-color-transparent border-radius-4px position-absolute left-18px top-18px ps-10px pe-10px">20K</div>
-                                <a href="demo-real-estate-sell.html" className="d-block">
+                                <a href="/sell" className="d-block">
                                     <img src={Shop} alt="" />
                                 </a>
                             </div>
                             <div className="feature-box-content">
-                                <a href="demo-real-estate-sell.html" className="alt-font text-dark-gray text-dark-gray-hover fw-700 fs-15 lh-20 text-uppercase">Shop</a>
+                                <a href="/sell" className="alt-font text-dark-gray text-dark-gray-hover fw-700 fs-15 lh-20 text-uppercase">Shop</a>
                             </div>
                         </div>  
                     </div>
@@ -301,7 +308,7 @@ const Page = () => {
                     </div>
                     <div className="col-md-4" >
                         <div className="d-flex justify-content-center justify-content-md-end">
-                            <a href="demo-real-estate-sell.html" className="fw-600 alt-font text-dark-gray text-dark-gray-hover d-flex align-items-center">View all property<span className="d-flex align-items-center justify-content-center bg-dark-gray h-40px w-40px text-center rounded-circle fs-16 text-white ms-10px"><i className="feather icon-feather-arrow-right"></i></span></a>
+                            <a href="/sell" className="fw-600 alt-font text-dark-gray text-dark-gray-hover d-flex align-items-center">View all property<span className="d-flex align-items-center justify-content-center bg-dark-gray h-40px w-40px text-center rounded-circle fs-16 text-white ms-10px"><i className="feather icon-feather-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -311,14 +318,14 @@ const Page = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-base-color border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Sell</div>
                             </div> 
                             <div className="bg-white">
                                 <div className="content ps-40px pe-40px pt-35px pb-35px md-p-25px border-bottom border-color-transparent-dark-very-light">
                                     <div className="d-flex align-items-center">
-                                        <a href="demo-real-estate-property-details.html" className="alt-font text-dark-gray fw-700 fs-22 me-10px">Luxury villa in Texas</a>
+                                        <a href="/property_details" className="alt-font text-dark-gray fw-700 fs-22 me-10px">Luxury villa in Texas</a>
                                     </div>
                                     <p className="mb-20px">982 Monroe ave, rochester</p>
                                     <div className="row g-0">
@@ -347,7 +354,7 @@ const Page = () => {
                                 </div> 
                                 <div className="row ps-35px pe-35px pt-20px pb-20px md-ps-25px md-pe-25px align-items-center">
                                     <div className="col">
-                                        <a href="demo-real-estate-property-details.html" className="btn btn-dark-gray btn-very-small btn-round-edge fw-600">View details</a>
+                                        <a href="/property_details" className="btn btn-dark-gray btn-very-small btn-round-edge fw-600">View details</a>
                                     </div>
                                     <div className="col text-end">
                                         <span className="fs-24 alt-font text-dark-gray fw-700 mb-0">$6,89,000</span>
@@ -362,7 +369,7 @@ const Page = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-orange border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Rent</div>
                             </div> 
@@ -398,7 +405,7 @@ const Page = () => {
                                 </div> 
                                 <div className="row ps-35px pe-35px pt-20px pb-20px md-ps-25px md-pe-25px align-items-center">
                                     <div className="col">
-                                        <a href="demo-real-estate-property-details.html" className="btn btn-dark-gray btn-very-small btn-round-edge fw-600">View details</a>
+                                        <a href="/property_details" className="btn btn-dark-gray btn-very-small btn-round-edge fw-600">View details</a>
                                     </div>
                                     <div className="col text-end">
                                         <span className="fs-24 alt-font text-dark-gray fw-700 mb-0">$8,50,000</span>
@@ -413,7 +420,7 @@ const Page = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-base-color border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Sell</div>
                             </div> 
@@ -449,7 +456,7 @@ const Page = () => {
                                 </div> 
                                 <div className="row ps-35px pe-35px pt-20px pb-20px md-ps-25px md-pe-25px align-items-center">
                                     <div className="col">
-                                        <a href="demo-real-estate-property-details.html" className="btn btn-dark-gray btn-very-small btn-round-edge fw-600">View details</a>
+                                        <a href="/property_details" className="btn btn-dark-gray btn-very-small btn-round-edge fw-600">View details</a>
                                     </div>
                                     <div className="col text-end">
                                         <span className="fs-24 alt-font text-dark-gray fw-700 mb-0">$6,50,000</span>
@@ -464,14 +471,14 @@ const Page = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-base-color border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Sell</div>
                             </div> 
                             <div className="bg-white">
                                 <div className="content ps-40px pe-40px pt-35px pb-35px md-p-25px border-bottom border-color-transparent-dark-very-light">
                                     <div className="d-flex align-items-center">
-                                        <a href="demo-real-estate-property-details.html" className="alt-font text-dark-gray fw-700 fs-22 me-10px">Ranch style in Illinois</a>
+                                        <a href="/property_details" className="alt-font text-dark-gray fw-700 fs-22 me-10px">Ranch style in Illinois</a>
                                     </div>
                                     <p className="mb-20px">4403 Pick street pleasant view</p>
                                     <div className="row g-0">
@@ -500,7 +507,7 @@ const Page = () => {
                                 </div> 
                                 <div className="row ps-35px pe-35px pt-20px pb-20px md-ps-25px md-pe-25px align-items-center">
                                     <div className="col">
-                                        <a href="demo-real-estate-property-details.html" className="btn btn-dark-gray btn-very-small btn-round-edge fw-600">View details</a>
+                                        <a href="/property_details" className="btn btn-dark-gray btn-very-small btn-round-edge fw-600">View details</a>
                                     </div>
                                     <div className="col text-end">
                                         <span className="fs-24 alt-font text-dark-gray fw-700 mb-0">$6,00,000</span>
@@ -514,8 +521,8 @@ const Page = () => {
                     <div className="col sm-mb-30px">
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
-                                <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                <a href="/property_details">
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-orange border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Rent</div>
                             </div> 
@@ -565,15 +572,15 @@ const Page = () => {
                     <div className="col">
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
-                                <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                <a href="/property_details">
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-base-color border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Sell</div>
                             </div> 
                             <div className="bg-white">
                                 <div className="content ps-40px pe-40px pt-35px pb-35px md-p-25px border-bottom border-color-transparent-dark-very-light">
                                     <div className="d-flex align-items-center">
-                                        <a href="demo-real-estate-property-details.html" className="alt-font text-dark-gray fw-700 fs-22 me-10px">Modern house in Texas</a>
+                                        <a href="/property_details" className="alt-font text-dark-gray fw-700 fs-22 me-10px">Modern house in Texas</a>
                                     </div>
                                     <p className="mb-20px">3259 Filbert street bethlehem</p>
                                     <div className="row g-0">
@@ -602,7 +609,7 @@ const Page = () => {
                                 </div> 
                                 <div className="row ps-35px pe-35px pt-20px pb-20px md-ps-25px md-pe-25px align-items-center">
                                     <div className="col">
-                                        <a href="demo-real-estate-property-details.html" className="btn btn-dark-gray btn-very-small btn-round-edge fw-600">View details</a>
+                                        <a href="/property_details" className="btn btn-dark-gray btn-very-small btn-round-edge fw-600">View details</a>
                                     </div>
                                     <div className="col text-end">
                                         <span className="fs-24 alt-font text-dark-gray fw-700 mb-0">$6,95,000</span>
@@ -628,7 +635,7 @@ const Page = () => {
                             <div className="icon-with-text-style-08 mb-30px">
                                 <div className="feature-box feature-box-left-icon overflow-hidden">
                                     <div className="feature-box-icon">
-                                        <img src="https://via.placeholder.com/80x80" className="w-80px" alt="" />
+                                        <img src={Image} className="w-80px" alt="" />
                                     </div>
                                     <div className="feature-box-content last-paragraph-no-margin">
                                         <span className="text-dark-gray fs-19 alt-font mb-5px fw-600 d-block">Most appreciated projects</span>
@@ -641,7 +648,7 @@ const Page = () => {
                             <div className="icon-with-text-style-08">
                                 <div className="feature-box feature-box-left-icon overflow-hidden">
                                     <div className="feature-box-icon">
-                                        <img src="https://via.placeholder.com/80x80" className="w-80px" alt="" />
+                                        <img src={Image} className="w-80px" alt="" />
                                     </div>
                                     <div className="feature-box-content last-paragraph-no-margin">
                                         <span className="text-dark-gray fs-19 alt-font mb-5px fw-600 d-block">Highest rental income projects</span>
@@ -652,7 +659,7 @@ const Page = () => {
                              {/* end features box item  */}
                         </div>
                         <div className="d-inline-block">
-                            <a href="demo-real-estate-about.html" className="btn btn-dark-gray btn-medium btn-round-edge me-15px xs-mb-10px">about more</a> 
+                            <a href="/about" className="btn btn-dark-gray btn-medium btn-round-edge me-15px xs-mb-10px">about more</a> 
                             <a href="demo-real-estate-agents.html" className="btn btn-medium btn-round-edge btn-transparent-light-gray border-1 fw-700 xs-mb-10px">Trusted agents</a>
                         </div>
                     </div> 
@@ -660,8 +667,8 @@ const Page = () => {
                     <div className="col-lg-6 offset-lg-1 position-relative" >
                          {/* start popup video  */}
                         <figure className="position-relative mb-0 border-radius-6px overflow-hidden"> 
-                            <img src="https://via.placeholder.com/800x786" className="w-100 border-radius-6px" alt="" />
-                            <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" className="absolute-middle-center text-center rounded-circle video-icon-box video-icon-large popup-vimeo">
+                            <img src={Est_Vid} className="w-100 border-radius-6px" alt="" />
+                            <a href="https://youtu.be/PHhuIg6oLC4?si=670DErgFl3s1MJpe" className="absolute-middle-center text-center rounded-circle video-icon-box video-icon-large popup-vimeo">
                                 <span>
                                     <span className="video-icon bg-white">
                                         <i className="fa-solid fa-play text-dark-gray"></i>
@@ -702,7 +709,7 @@ const Page = () => {
                 <div className="row align-items-center">
                     <div className="col-xl-4 col-lg-5 md-mb-50px sm-mb-35px"> 
                         <span className="fs-20 d-inline-block mb-15px text-base-color">Find your dream house</span>
-                        <h3 className="alt-font fw-500 text-dark-gray ls-minus-1px w-90 xl-w-100 shadow-none" data-shadow-animation="true" data-animation-delay="700">We are available in <span className="fw-700 text-highlight d-inline-block">many countries<span className="bg-base-color h-10px bottom-1px opacity-3 separator-animation"></span></span></h3>
+                        <h3 className="alt-font fw-500 text-dark-gray ls-minus-1px w-90 xl-w-100 shadow-none" data-shadow-animation="true" data-animation-delay="700">We are available in <span className="fw-700 text-highlight d-inline-block">many cities<span className="bg-base-color h-10px bottom-1px opacity-3 separator-animation"></span></span></h3>
                         <p className="mb-30px w-90 md-w-100">We provide a wide selection of home types for you and your family and are free to choose a home model.</p>
                         <div className="d-flex">
                              {/* start slider navigation  */}
@@ -721,7 +728,7 @@ const Page = () => {
                                         <div className="col interactive-banner-style-05">
                                             <figure className="m-0 hover-box overflow-hidden position-relative border-radius-6px">
                                                 <a href="#">
-                                                    <img src="https://via.placeholder.com/370x510" className="w-100 border-radius-6px" alt="" />
+                                                    <img src={Top} className="w-100 border-radius-6px" alt="" />
                                                     <div className="position-absolute top-0px left-0px w-100 h-100 bg-gradient-gray-light-dark-transparent"></div>
                                                     <div className="position-absolute top-25px right-25px bg-orange border-radius-50px ps-5px pe-15px lh-28">
                                                         <div className="w-20px h-20px text-center bg-white rounded-circle d-inline-block align-middle text-orange lh-18">
@@ -731,10 +738,10 @@ const Page = () => {
                                                     </div>
                                                 </a>
                                                 <figcaption className="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-50px xl-p-40px sm-p-30px last-paragraph-no-margin">
-                                                    <img src="https://via.placeholder.com/130x130" className="mb-auto h-70px" alt="" />
-                                                    <a href="demo-real-estate-sell.html" className="text-white alt-font fw-600 fs-26">Washington, USA</a> 
+                                                    <img src={Image} className="mb-auto h-70px" alt="" />
+                                                    <a href="/sell" className="text-white alt-font fw-600 fs-26">Washington, USA</a> 
                                                     <span className="opacity-7 text-white">17 property listing</span>
-                                                    <a href="demo-real-estate-sell.html" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
+                                                    <a href="/sell" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -758,9 +765,9 @@ const Page = () => {
                                                 </a>
                                                 <figcaption className="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-50px xl-p-40px sm-p-30px last-paragraph-no-margin">
                                                     <img src="https://via.placeholder.com/130x130" className="mb-auto h-70px" alt="" />
-                                                    <a href="demo-real-estate-sell.html" className="text-white alt-font fw-600 fs-26">Paris, France</a> 
+                                                    <a href="/sell" className="text-white alt-font fw-600 fs-26">Paris, France</a> 
                                                     <span className="opacity-7 text-white">20 property listing</span>
-                                                    <a href="demo-real-estate-sell.html" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
+                                                    <a href="/sell" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -784,9 +791,9 @@ const Page = () => {
                                                 </a>
                                                 <figcaption className="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-50px xl-p-40px sm-p-30px last-paragraph-no-margin">
                                                     <img src="https://via.placeholder.com/130x130" className="mb-auto h-70px" alt="" />
-                                                    <a href="demo-real-estate-sell.html" className="text-white alt-font fw-600 fs-26">Chicago, USA</a> 
+                                                    <a href="/sell" className="text-white alt-font fw-600 fs-26">Chicago, USA</a> 
                                                     <span className="opacity-7 text-white">45 property listing</span>
-                                                    <a href="demo-real-estate-sell.html" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
+                                                    <a href="/sell" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -810,9 +817,9 @@ const Page = () => {
                                                 </a>
                                                 <figcaption className="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-50px xl-p-40px sm-p-30px last-paragraph-no-margin">
                                                     <img src="https://via.placeholder.com/130x130" className="mb-auto h-70px" alt="" />
-                                                    <a href="demo-real-estate-sell.html" className="text-white alt-font fw-600 fs-26">San francisco, USA</a> 
+                                                    <a href="/sell" className="text-white alt-font fw-600 fs-26">San francisco, USA</a> 
                                                     <span className="opacity-7 text-white">45 property listing</span>
-                                                    <a href="demo-real-estate-sell.html" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
+                                                    <a href="/sell" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -835,9 +842,9 @@ const Page = () => {
                                                 </a>
                                                 <figcaption className="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-50px xl-p-40px sm-p-30px last-paragraph-no-margin">
                                                     <img src="https://via.placeholder.com/130x130" className="mb-auto h-70px" alt="" />
-                                                    <a href="demo-real-estate-sell.html" className="text-white alt-font fw-600 fs-26">Paris, France</a> 
+                                                    <a href="/sell" className="text-white alt-font fw-600 fs-26">Paris, France</a> 
                                                     <span className="opacity-7 text-white">20 property listing</span>
-                                                    <a href="demo-real-estate-sell.html" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
+                                                    <a href="/sell" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -861,9 +868,9 @@ const Page = () => {
                                                 </a>
                                                 <figcaption className="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-50px xl-p-40px sm-p-30px last-paragraph-no-margin">
                                                     <img src="https://via.placeholder.com/130x130" className="mb-auto h-70px" alt="" />
-                                                    <a href="demo-real-estate-sell.html" className="text-white alt-font fw-600 fs-26">Chicago, USA</a> 
+                                                    <a href="/sell" className="text-white alt-font fw-600 fs-26">Chicago, USA</a> 
                                                     <span className="opacity-7 text-white">45 property listing</span>
-                                                    <a href="demo-real-estate-sell.html" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
+                                                    <a href="/sell" className="btn btn-light-base-color btn-small btn-round-edge btn-box-shadow mt-20px">All properties<i className="feather icon-feather-arrow-right icon-very-small"></i></a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -963,7 +970,7 @@ const Page = () => {
                 <div className="row align-items-center justify-content-center">  
                     <div className="col-lg-6 text-end md-mb-50px" > 
                         <figure className="position-relative m-0">
-                            <img src="https://via.placeholder.com/800x907" className="w-90 border-radius-6px" alt="" />
+                            <img src={Home} className="w-90 border-radius-6px" alt="" />
                             <figcaption className="position-absolute bg-dark-gray border-radius-10px box-shadow-quadruple-large bottom-100px xs-bottom-minus-20px left-minus-30px md-left-0px w-230px xs-w-210px text-center last-paragraph-no-margin animation-float">
                                 <div className="bg-white pt-35px pb-35px border-radius-8px mb-15px position-relative top-minus-1px">
                                     <h1 className="fw-700 ls-minus-3px text-dark-gray mb-0 alt-font">4.8</h1>
@@ -986,7 +993,7 @@ const Page = () => {
                                 <div className="swiper-slide review-style-08">
                                     <p className="w-80 xl-w-90 lg-w-100">Love the theme, really neat and super easy to use. But the customer support is what makes this an even greater theme! ThemeZaa solved all the problems. I had with my custom settings.</p>
                                     <div className="mt-20px">
-                                        <img className="rounded-circle w-95px h-95px me-15px" src="https://via.placeholder.com/148x148" alt="" />
+                                        <img className="rounded-circle w-95px h-95px me-15px" src={Rev1} alt="" />
                                         <div className="d-inline-block align-middle text-start">
                                             <div className="text-dark-gray alt-font fs-20"><span className="fw-700">Alexander</span> harvard</div>
                                             <div className="review-star-icon fs-18">

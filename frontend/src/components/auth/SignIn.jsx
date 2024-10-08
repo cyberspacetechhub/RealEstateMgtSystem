@@ -265,7 +265,7 @@ const SignIn = ({open, handleCloseLogin}) => {
         </div>
         </div>
       </div>
-      <SignUp open={openModal} handleClose={() => { handleClose(); handleCloseLogin(); }} />
+      <SignUp open={openModal} handleClose={handleClose} />
     </div>
     </Modal>
   )

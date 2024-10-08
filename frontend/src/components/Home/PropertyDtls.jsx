@@ -343,7 +343,7 @@ const PropertyDtls = () => {
                                 {/*  start features box item  */}
                                 <div className="feature-box-icon feature-box-icon-rounded w-90px h-90px overflow-visible me-20px position-relative">
                                     <img src="https://via.placeholder.com/148x148" className="rounded-circle" alt="" />
-                                    <span className="animation-zoom d-inline-block bg-orange border border-2 border-color-white h-20px w-20px border-radius-100 position-absolute right-0px top-5px"></span>
+                                    <span className="animation-zoom d-inline-block bg-orange border-2 border-color-white h-20px w-20px border-radius-100 position-absolute right-0px top-5px"></span>
                                 </div>
                                 {/*  end features box item  */}
                                 {/*  start features box item  */}

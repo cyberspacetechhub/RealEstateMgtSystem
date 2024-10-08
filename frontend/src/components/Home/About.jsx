@@ -1,4 +1,6 @@
 import React from 'react'
+import AboutImg from '../../assets/images/photos/about.jpeg'
+import AboutImg2 from '../../assets/images/photos/estate-vid.jpeg'
 
 const About = () => {
   return (
@@ -23,7 +25,7 @@ const About = () => {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 p-0 position-relative">
-                        <img src="https://via.placeholder.com/1920x600" alt="Logo" className="w-100" />
+                        <img src={AboutImg} alt="Logo" className="w-100" />
                         <div className="alt-font fw-600 fs-350 lg-fs-275 md-fs-250 xs-fs-160 ls-minus-5px xs-ls-minus-2px position-absolute right-minus-50px lg-right-0px bottom-minus-80px md-bottom-minus-60px xs-bottom-minus-40px text-white text-outline text-outline-width-3px" data-bottom-top="transform: translate3d(80px, 0px, 0px);" data-top-bottom="transform: translate3d(-280px, 0px, 0px);">about</div>
                     </div>
                 </div>
@@ -36,7 +38,7 @@ const About = () => {
                 <div className="row align-items-center">  
                     <div className="col-lg-6 order-2 order-lg-1 position-relative align-self-end" > 
                         <figure className="position-relative m-0">
-                            <img src="https://via.placeholder.com/610x647" className="w-100" alt="card" />
+                            <img src={AboutImg2} className="w-100" alt="card" />
                             <figcaption className="w-180px bg-white p-30px pt-20px border-radius-8px position-absolute top-150px right-minus-30px lg-right-0px overflow-hidden box-shadow-medium animation-float"> 
                                 <span className="alt-font fs-100 fw-700 text-white d-block position-relative z-index-1">15</span>
                                 <div className="alt-font fw-500 fs-24 d-block text-dark-gray lh-26 ls-minus-05px">Years of <span className="fw-700">experience.</span></div>
