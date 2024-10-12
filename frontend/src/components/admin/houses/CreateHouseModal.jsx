@@ -82,9 +82,8 @@ const CreateHouseModal = ({open, handleClose}) => {
     })
 
     const handleCreateHouse = (data) => {
-    // Pass the image and form data to mutate
     const houseData = { ...data, image, docImage }; 
-    mutate(houseData);  // Pass both form data and image
+    mutate(houseData);  
     setTimeout(() => {
       handleClose();
     }, 3000);
@@ -329,38 +328,7 @@ const CreateHouseModal = ({open, handleClose}) => {
                     placeholder="Enter docType here"
                   />
                 </div>
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="basement"
-                    className="block mb-2 text-sm font-medium text-gray-900 "
-                  >
-                    Basement:
-                  </label>
-                  <input
-                    id="basement"
-                    name='basement'
-                    type='text'
-                    {...register("basement", { required: true })}
-                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-green-500 focus:border-primary-500 "
-                    placeholder="Enter basement here"
-                  />
-                </div>
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="amenities"
-                    className="block mb-2 text-sm font-medium text-gray-900 "
-                  >
-                    Amenities:
-                  </label>
-                  <input
-                    id="amenities"
-                    name='amenities'
-                    type='text'
-                    {...register("amenities", { required: true })}
-                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-green-500 focus:border-primary-500 "
-                    placeholder="Enter amenities here"
-                  />
-                </div>
+                
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="exteriorFeatures"

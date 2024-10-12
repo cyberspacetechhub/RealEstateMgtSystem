@@ -1,4 +1,8 @@
 import React from 'react'
+import RentPic from '../../assets/images/photos/rent.jpg'
+import House from '../../assets/images/photos/house.jpg'
+import HomePic from '../../assets/images/photos/home2.jpg'
+import TopImg from '../../assets/images/photos/olp2.jpg'
 
 const Sell = () => {
   return (
@@ -24,7 +28,7 @@ const Sell = () => {
             <div className="container-fluid">
                 <div className="row overlap-height">
                     <div className="col-12 p-0 position-relative overlap-gap-section">
-                        <img src="https://via.placeholder.com/1920x600" alt="" className="w-100" />
+                        <img src={RentPic} alt="" className="w-100" />
                         <div className="alt-font fw-600 fs-350 lg-fs-275 md-fs-250 xs-fs-160 position-absolute right-minus-170px lg-right-0px bottom-50px md-bottom-minus-60px xs-bottom-minus-50px text-white text-outline ls-minus-5px lg-right-0px text-outline-width-2px z-index-2" data-bottom-top="transform: translate3d(80px, 0px, 0px);" data-top-bottom="transform: translate3d(-280px, 0px, 0px);">selling</div>
                     </div>
                 </div>
@@ -124,7 +128,7 @@ const Sell = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-base-color border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Sell</div>
                             </div> 
@@ -175,7 +179,7 @@ const Sell = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-base-color border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Sell</div>
                             </div> 
@@ -226,7 +230,7 @@ const Sell = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-base-color border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Sell</div>
                             </div> 
@@ -277,7 +281,7 @@ const Sell = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-base-color border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Sell</div>
                             </div> 
@@ -328,7 +332,7 @@ const Sell = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-base-color border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Sell</div>
                             </div> 
@@ -379,7 +383,7 @@ const Sell = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-base-color border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Sell</div>
                             </div> 
@@ -505,9 +509,9 @@ const Sell = () => {
                     </div>
                     <div className="col-xl-7 col-lg-6 position-relative" >
                         <figure className="position-relative m-0">
-                            <img src="https://via.placeholder.com/697x671" alt="" />
+                            <img src={HomePic} alt="" />
                             <figcaption className="position-absolute top-50 translate-middle-y left-0px d-none d-md-block"> 
-                                <img src="https://via.placeholder.com/151x151" className="animation-float" alt="" />
+                                <img src={TopImg} className="animation-float" alt="" />
                             </figcaption>
                         </figure>
                     </div>

@@ -1,6 +1,12 @@
 import React from 'react'
 import AboutImg from '../../assets/images/photos/about.jpeg'
 import AboutImg2 from '../../assets/images/photos/estate-vid.jpeg'
+import ServiceImg from '../../assets/images/photos/service.jpg'
+import FriendlyPic from '../../assets/images/photos/friendly3.jpg'
+import TrustPic from '../../assets/images/photos/OIP.jpg' 
+import LegalPic from '../../assets/images/photos/legal.jpg'
+import RevPic from '../../assets/images/photos/review.jpg'
+import Rev1 from '../../assets/images/photos/download.jpeg'
 
 const About = () => {
   return (
@@ -86,7 +92,7 @@ const About = () => {
                     <div className="col icon-with-text-style-07 transition-inner-all md-mb-30px">
                         <div className="bg-white feature-box box-shadow-quadruple-large box-shadow-quadruple-large-hover text-center p-16 lg-p-14 border-radius-10px last-paragraph-no-margin">
                             <div className="feature-box-icon mb-20px"> 
-                                <img src="https://via.placeholder.com/158x158" className="h-80px" alt="" />
+                                <img src={ServiceImg} className="h-80px" alt="" />
                             </div>
                             <div className="feature-box-content">
                                 <span className="alt-font fw-600 text-dark-gray fs-20 d-inline-block mb-5px">Best services</span>
@@ -99,7 +105,7 @@ const About = () => {
                     <div className="col icon-with-text-style-07 transition-inner-all md-mb-30px">
                         <div className="bg-white feature-box box-shadow-quadruple-large box-shadow-quadruple-large-hover text-center p-16 lg-p-14 border-radius-10px last-paragraph-no-margin">
                             <div className="feature-box-icon mb-20px"> 
-                                <img src="https://via.placeholder.com/158x158" className="h-80px" alt="" />
+                                <img src={FriendlyPic} className="h-80px" alt="" />
                             </div>
                             <div className="feature-box-content">
                                 <span className="alt-font fw-600 text-dark-gray fs-20 d-inline-block mb-5px">User friendly</span>
@@ -112,7 +118,7 @@ const About = () => {
                     <div className="col icon-with-text-style-07 transition-inner-all xs-mb-30px">
                         <div className="bg-white feature-box box-shadow-quadruple-large box-shadow-quadruple-large-hover text-center p-16 lg-p-14 border-radius-10px last-paragraph-no-margin">
                             <div className="feature-box-icon mb-20px"> 
-                                <img src="https://via.placeholder.com/158x158" className="h-80px" alt="" />
+                                <img src={TrustPic} className="h-80px" alt="" />
                             </div>
                             <div className="feature-box-content">
                                 <span className="alt-font fw-600 text-dark-gray fs-20 d-inline-block mb-5px">Trusted property</span>
@@ -125,7 +131,7 @@ const About = () => {
                     <div className="col icon-with-text-style-07 transition-inner-all">
                         <div className="bg-white feature-box box-shadow-quadruple-large box-shadow-quadruple-large-hover text-center p-16 lg-p-14 border-radius-10px last-paragraph-no-margin">
                             <div className="feature-box-icon mb-20px"> 
-                                <img src="https://via.placeholder.com/158x158" className="h-80px" alt="" />
+                                <img src={LegalPic} className="h-80px" alt="" />
                             </div>
                             <div className="feature-box-content">
                                 <span className="alt-font fw-600 text-dark-gray fs-20 d-inline-block mb-5px">Legal advisor</span>
@@ -158,7 +164,7 @@ const About = () => {
                 <div className="row align-items-center justify-content-center">  
                     <div className="col-lg-6 text-end md-mb-50px" > 
                         <figure className="position-relative m-0">
-                            <img src="https://via.placeholder.com/800x907" className="w-90 border-radius-6px" alt="" />
+                            <img src={RevPic} className="w-90 border-radius-6px" alt="" />
                             <figcaption className="position-absolute bg-dark-gray border-radius-10px box-shadow-quadruple-large bottom-100px xs-bottom-minus-20px left-minus-30px md-left-0px w-230px xs-w-210px text-center last-paragraph-no-margin animation-float">
                                 <div className="bg-white pt-35px pb-35px border-radius-8px mb-15px position-relative top-minus-1px">
                                     <h1 className="fw-700 ls-minus-3px text-dark-gray mb-0 alt-font">4.8</h1>
@@ -181,7 +187,7 @@ const About = () => {
                                 <div className="swiper-slide review-style-08">
                                     <p className="w-80 lg-w-100">Love the theme, really neat and super easy to use. But the customer support is what makes this an even greater theme! ThemeZaa solved all the problems. I had with my custom settings.</p>
                                     <div className="mt-20px">
-                                        <img className="rounded-circle w-95px h-95px me-15px" src="https://via.placeholder.com/148x148" alt="" />
+                                        <img className="rounded-circle w-95px h-95px me-15px" src={Rev1} alt="" />
                                         <div className="d-inline-block align-middle text-start">
                                             <div className="text-dark-gray alt-font fs-20"><span className="fw-700">Alexander</span> harvard</div>
                                             <div className="review-star-icon fs-18">

@@ -1,4 +1,6 @@
 import React from 'react'
+import RentPic from '../../assets/images/photos/rent.jpg'
+import House from '../../assets/images/photos/house.jpg'
 
 const Rent = () => {
   return (
@@ -24,7 +26,7 @@ const Rent = () => {
             <div className="container-fluid">
                 <div className="row overlap-height">
                     <div className="col-12 p-0 position-relative overlap-gap-section">
-                        <img src="https://via.placeholder.com/1920x600" alt="" className="w-100" />
+                        <img src={RentPic} alt="" className="w-100" />
                         <div className="alt-font fw-600 fs-350 lg-fs-275 md-fs-250 xs-fs-160 position-absolute right-minus-170px lg-right-0px bottom-50px md-bottom-minus-60px xs-bottom-minus-50px text-white text-outline ls-minus-5px lg-right-0px text-outline-width-2px z-index-2" data-bottom-top="transform: translate3d(80px, 0px, 0px);" data-top-bottom="transform: translate3d(-280px, 0px, 0px);">rentals</div>
                     </div>
                 </div>
@@ -93,7 +95,7 @@ const Rent = () => {
                             {/*  start features box item  */}
                             <div className="feature-box feature-box-left-icon-middle text-start">
                                 <div className="feature-box-content">
-                                    <span className="d-block alt-font fw-600 text-base-color ls-05px">Office</span>
+                                    <span className="d-block alt-font fw-600 text-base-color ls-05px">Shop</span>
                                     <h4 className="d-inline-block text-dark-gray fw-800 ls-minus-1px me-5px alt-font mb-0 d-inline-block">4413</h4>
                                 </div>
                                 <div className="feature-box-icon me-0">
@@ -124,7 +126,7 @@ const Rent = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-orange border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Rent</div>
                             </div> 
@@ -175,7 +177,7 @@ const Rent = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-orange border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Rent</div>
                             </div> 
@@ -226,7 +228,7 @@ const Rent = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-orange border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Rent</div>
                             </div> 
@@ -277,7 +279,7 @@ const Rent = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-orange border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Rent</div>
                             </div> 
@@ -328,7 +330,7 @@ const Rent = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-orange border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Rent</div>
                             </div> 
@@ -379,7 +381,7 @@ const Rent = () => {
                         <div className="border-radius-6px overflow-hidden box-shadow-large">
                             <div className="image position-relative">
                                 <a href="demo-real-estate-property-details.html">
-                                    <img src="https://via.placeholder.com/600x415" alt="" />
+                                    <img src={House} alt="" />
                                 </a>
                                 <div className="col-auto bg-orange border-radius-50px ps-15px pe-15px text-uppercase alt-font fw-600 text-white fs-12 lh-24 position-absolute left-20px top-20px">Rent</div>
                             </div> 

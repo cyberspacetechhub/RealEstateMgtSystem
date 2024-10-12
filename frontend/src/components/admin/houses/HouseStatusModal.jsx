@@ -87,6 +87,7 @@ const HouseStatusModal = ({openStatus, handleCloseStatus, house}) => {
             {...register("status", { required: true })}
             className="mt-1 p-2 border border-gray-300 rounded-md w-full"
           >
+            <option value="Pending">Pending</option>
             <option value="Available">Available</option>
             <option value="Sold">Sold</option>
             <option value="Rented">Rented</option>
