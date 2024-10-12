@@ -4,7 +4,8 @@ const {
     getProperty,
     deleteProperty,
     getRecentProperties,
-    propertyStatus
+    propertyStatus,
+    uploadPropertyImage
 } = require('../services/propertyService')
 
 const getPropertiesHandler = async (req, res) => {
@@ -61,11 +62,30 @@ const getRecentPropertiesHandler = async (req, res) => {
   if(!properties) return res.status(404).json({message: 'Properties not found'})
   return res.status(200).json(properties)
 };
+
+const uploadPropertyImageHandler = async (req, res) => {
+  try{
+    if(!req.files) return res.status(400).json({status: "error", message: "Missing files"})
+    const files = req.files
+    const _id = req.params.id
+    // console.log(_id)
+    const result = await uploadPropertyImage(files, _id);
+    console.log(result)
+      if(result.error) {
+          return res.status(400).json({message: result})
+      }
+    return res.status(200).json(result)
+  } catch (error) {
+    return res.status(500).json({message: error})
+  }
+};
+
 module.exports = {
   getPropertiesHandler,
   getPropertiesByOwnerHandler,
   getPropertyHandler,
   deletePropertyHandler,
   propertyStatusHandler,
-  getRecentPropertiesHandler
+  getRecentPropertiesHandler,
+  uploadPropertyImageHandler
 }

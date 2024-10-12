@@ -17,7 +17,6 @@ const createHouse = async (data) => {
     const interiorFeaturesArray = data.interiorFeatures ? data.interiorFeatures.split(', ') : [];
     const livingRoomFeaturesArray = data.livingRoomFeatures ? data.livingRoomFeatures.split(', ') : [];
     const kitchenFeaturesArray = data.kitchenFeatures ? data.kitchenFeatures.split(', ') : [];
-    const amenitiesArray = data.amenities ? data.amenities.split(', ') : [];
 
     try {
         const newHouse = await House.create({
@@ -25,7 +24,6 @@ const createHouse = async (data) => {
             description: data.description,
             price: data.price,
             location: data.location,
-            // images: images,
             owner: ownerId,
             bedrooms: data.bedrooms,
             bathrooms: data.bathrooms,
@@ -35,8 +33,6 @@ const createHouse = async (data) => {
             stories: data.stories,
             docType: data.docType,
             // docImages: docImages,
-            basement: data.basement,
-            amenities: amenitiesArray,
             livingRoomFeatures: livingRoomFeaturesArray,
             exteriorFeatures: exteriorFeaturesArray,
             interiorFeatures: interiorFeaturesArray,
@@ -91,8 +87,6 @@ const updateHouse = async (id, data) => {
         if(data.yearBuilt) house.yearBuilt = data.yearBuilt
         if(data.lotSize) house.lotSize = data.lotSize
         if(data.stories) house.stories = data.stories
-        if(data.docType) house.docType = data.docType
-        if(data.basement) house.basement = data.basement
         if(data.amenities) house.amenities = data.amenities
         if(data.exteriorFeatures) house.exteriorFeatures = data.exteriorFeatures
         if(data.interiorFeatures) house.interiorFeatures = data.interiorFeatures

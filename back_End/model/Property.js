@@ -14,14 +14,14 @@ const PropertySchema = new Schema({
     required: true
   },
   price: {
-    type: Number,
+    type: String,
     required: true
   },
   location: {
     type: String,
     required: true
   },
-  images: {
+  imageUrls: {
     type: [String],
   },
   owner: {
@@ -31,8 +31,8 @@ const PropertySchema = new Schema({
   },
   status: {
     type: String,
-    enum: ['Available', 'Sold', 'Rented', 'Leased'],
-    default: 'Available'
+    enum: ['Pending', 'Available', 'Sold', 'Rented', 'Leased'],
+    default: 'Pending'
   },
 
 },{timestamps: true, ...options});

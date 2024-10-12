@@ -4,15 +4,15 @@ const Property = require('./Property');
 
 const HouseSchema = Property.discriminator('House', new Schema({
   bedrooms: {
-    type: Number,
+    type: String,
     required: true
   },
   bathrooms: {
-    type: Number,
+    type: String,
     required: true
   },
   squareFootage: {
-    type: Number,
+    type: String,
     required: true
   },
   docType: {
@@ -23,24 +23,15 @@ const HouseSchema = Property.discriminator('House', new Schema({
     type: [String]
   },
   yearBuilt: {
-    type: Number,
-    required: true
-  },
-  lotSize: {
-    type: Number,
-    required: true
-  },
-  stories: {
-    type: Number,
-    required: true
-  },
-  basement: {
     type: String,
     required: true
   },
-  amenities: {
-    type: [String],
+  lotSize: {
+    type: String,
     required: true
+  },
+  stories: {
+    type: String,
   },
   exteriorFeatures: {
     type: [String],

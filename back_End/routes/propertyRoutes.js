@@ -1,7 +1,11 @@
 const express = require('express');
+const fileUpload = require('express-fileupload');
 const router = express.Router();
 const propertyController = require('../controllers/propertyController');
 const verifyRoles = require('../middleware/verifyRoles');
+const filesPayloadExists = require('../middleware/filesPayloadExists');
+const fileExtLimiter = require('../middleware/fileExtLimiter');
+const filesSizeLimiter = require('../middleware/filiesSizeLimiter');
 
 router.route('/')
     .get(propertyController.getPropertiesHandler)
@@ -13,4 +17,13 @@ router.route('/owner/:id')
 
 router.route('/status/:id')
     .put(verifyRoles('Admin', 'Agent', 'Owner'), propertyController.propertyStatusHandler)
+
+router.route('/upload/:id')
+    .put(verifyRoles('Admin', 'Agent', 'Owner'),
+        fileUpload({ createParentPath: true }),
+        filesPayloadExists,
+        fileExtLimiter(['.png', '.jpg', '.jpeg']),
+        filesSizeLimiter,
+        propertyController.uploadPropertyImageHandler
+    );
 module.exports = router;

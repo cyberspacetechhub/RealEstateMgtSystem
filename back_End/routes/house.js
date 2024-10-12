@@ -7,12 +7,8 @@ const upload = require('../middleware/upload')
 router.route('/')
     .get(houseController.getHousesHandler)
     .post(verifyRoles('Admin', 'Agent', 'Owner'),
-    upload.fields([
-        { name: 'images', maxCount: 3 },
-        { name: 'docImages', maxCount: 2 }
-    ]), (req, res, next) => {
-        houseController.createHouseHandler(req, res, next)
-    })
+        houseController.createHouseHandler)
+    
     .put(verifyRoles('Admin'), houseController.updateHouseHandler)
     router.route('/:id')
     .get(houseController.getHouseHandler)

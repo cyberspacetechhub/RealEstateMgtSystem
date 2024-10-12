@@ -1,6 +1,14 @@
 const Property = require('../model/Property');
 const User = require('../model/User');
+const path = require('path');
+const cloudinary = require('cloudinary').v2;
+const mongoose = require('mongoose');
 
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
+});
 const getProperties = async (data) => {
     let page = parseInt(data.page) || 1;
     let limit = parseInt(data.limit) || 6;
@@ -71,11 +79,43 @@ const getRecentProperties = async () => {
     }
 };
 
+const uploadPropertyImage = async (files, id ) => {
+    const propertyId = new mongoose.Types.ObjectId(id);
+
+    Object.keys(files).forEach(async (key) => {
+        const file = files[key];
+        const uploadStream = cloudinary.uploader.upload_stream(
+            {
+                folder: "RealEstate"
+            }
+            ,
+            async(error, result) => {
+                if (error) {
+                    return {error: "Error uploading files to cloudinary"}
+                } else {
+                    
+                    const property = await Property.findById({_id: propertyId}).exec();
+                    
+                    if (property == null) {
+                        return {error: "Property not found"}
+                    };
+                    property.imageUrls.push(result.url);
+                    await property.save()
+                    return  "Files uploaded succesfully to cloudinary"
+                }
+            }
+        );
+     uploadStream.end(file.data);
+    })
+    
+};
+
 module.exports = {
     getProperties,
     getPropertiesByOwner,
     getProperty,
     deleteProperty,
     getRecentProperties,
-    propertyStatus
+    propertyStatus,
+    uploadPropertyImage
 };
